@@ -1,4 +1,4 @@
-    # Right To Left
+# Right To Left
 
 
    VERB 		 | 		  PATH 		 |  	 DESCRIPTION
