@@ -1,0 +1,28 @@
+{
+  "name": "right-to-left",
+  "version": "1.0.0",
+  "description": "VERB \t\t | \t\t  PATH \t\t |  \t DESCRIPTION\r ------------ | ------------- | -------------------\r GET | /api/v1/manga/ | index of manga |\r GET | /api/v1/manga/:id | show page for selected manga |\r GET | /api/v1/manga/new | page to add manga |\r POST | /api/v1/manga/ | add a manga |\r GET | /api/v1/manga/:id/edit | page to edit a manga |\r PUT | /api/v1/manga/:id | edit/update a manga |\r DELETE | /api/v1/manga/:id | delete a manga |\r GET | /api/v1/welcome | Some sort of welcome page that asks if you're new to manga. If you say no it will take you to the manga index. If you say yes it will take you to...\r GET |/api/v1/beginners | A place that lists several beginner friendly manga",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandysHub/Right-to-left.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandysHub/Right-to-left/issues"
+  },
+  "homepage": "https://github.com/RandysHub/Right-to-left#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-react-views": "^0.11.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
