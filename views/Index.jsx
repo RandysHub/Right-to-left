@@ -11,6 +11,7 @@ class Index extends React.Component {
                 <link rel="stylesheet" href="/css/index.css" />
                 <body >
                     <h1 >See All The Manga!</h1><br />
+                    <a href='/manga/new'><button class='indexButton' >Add manga entry</button></a>
                     <div id="indexContainer">
                         <ul>
                             {manga.map((manga) => {
@@ -27,7 +28,7 @@ class Index extends React.Component {
                     </div>
                     <a href="/"><button ><h3>Back to Main Directory!</h3></button></a><br />
                 </body>
-            </html>
+            </html >
         )
     };
 };
