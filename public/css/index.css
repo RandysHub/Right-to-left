@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#indexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.indexDiv {
+    width: 225px;
+}
