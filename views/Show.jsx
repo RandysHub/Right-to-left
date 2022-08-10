@@ -12,6 +12,7 @@ class Show extends React.Component {
                 <body>
                     <h1>Manga manga</h1>
                     <h2>{manga.name}</h2>
+                    <img src={manga.img} alt="" />
                     <a href="/manga"><button ><h3>View manga index</h3></button></a><br />
                     <form action={`/manga/${manga.id}?_method=DELETE`} method="POST">
                         <button type="submit" ><h4 >Delete Entry</h4></button>

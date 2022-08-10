@@ -4,7 +4,7 @@ const port = process.env.PORT || 3003;
 require('dotenv').config();
 const mongoose = require('mongoose');
 const methodOverride = require('method-override')
-const Manga = require('./models/Manga')
+const Manga = require('./models/manga')
 const mangaData = require('./utilities/mangaData')
 
 app.use(express.static('public'));
@@ -50,13 +50,13 @@ app.get('/manga/new', (req, res) => {
     res.render('New');
 });
 
-app.get('/manga/seed', async (req, res) => {
-    //Comment below line if you don't want to delete your whole entire collection
-    // Not currently working
-    await Manga.deleteMany({})
-    await Manga.create(mangaData)
-    res.redirect('/manga')
-});
+// app.get('/manga/seed', async (req, res) => {
+//     //Comment below line if you don't want to delete your whole entire collection
+//     // Not currently working
+//     await Manga.deleteMany({})
+//     await Manga.create(mangaData)
+//     res.redirect('/manga')
+// });
 
 
 app.get('/manga/:id', (req, res) => {
