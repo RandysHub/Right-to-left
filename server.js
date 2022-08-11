@@ -46,17 +46,63 @@ app.post('/manga', (req, res) => {
     });
 });
 
+
+//Genre routes
+
+app.get('/manga/sports', (req, res) => {
+    Manga.find({ genre: 'Sports' }, (error, sportsManga) => {
+        res.render('Index', {
+            manga: sportsManga
+        })
+    })
+})
+
+app.get('/manga/action', (req, res) => {
+    Manga.find({ genre: 'Action' }, (error, actionManga) => {
+        res.render('Index', {
+            manga: actionManga
+        })
+    })
+})
+
+app.get('/manga/romance', (req, res) => {
+    Manga.find({ genre: 'Romance' }, (error, actionRomance) => {
+        res.render('Index', {
+            manga: actionRomance
+        })
+    })
+})
+
+app.get('/manga/sliceoflife', (req, res) => {
+    Manga.find({ genre: 'Slice of Life' }, (error, actionSol) => {
+        res.render('Index', {
+            manga: actionSol
+        })
+    })
+})
+
+app.get('/manga/comedy', (req, res) => {
+    Manga.find({ genre: 'Comedy' }, (error, actionComedy) => {
+        res.render('Index', {
+            manga: actionComedy
+        })
+    })
+})
+
+//new
 app.get('/manga/new', (req, res) => {
     res.render('New');
 });
 
-// app.get('/manga/seed', async (req, res) => {
-//     //Comment below line if you don't want to delete your whole entire collection
-//     // Not currently working
-//     await Manga.deleteMany({})
-//     await Manga.create(mangaData)
-//     res.redirect('/manga')
-// });
+
+//seed
+app.get('/manga/seed', async (req, res) => {
+    //Comment below line if you don't want to delete your whole entire collection
+    // Not currently working
+    await Manga.deleteMany({})
+    await Manga.create(mangaData)
+    res.redirect('/manga')
+});
 
 
 app.get('/manga/:id', (req, res) => {

@@ -16,8 +16,16 @@ class Edit extends React.Component {
                     {/* NOTE: action will be the route, method will be the HTTP verb */}
                     <form action={`/manga/${manga.id}?_method=PUT`} method="POST">
                         Name: <input type="text" name="name" placeholder='Name' /><br />
-                        {/* Image: <input type="text" name="img" placeholder='Image URL' /><br /> */}
+                        Image: <input type="text" name="img" placeholder='Image URL' /><br />
+                        <select name="genre" value='Genre'>
+                            <option value="Action">Action</option>
+                            <option value="Slice of Life">Slice of Life</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Sports">Sports</option>
+                        </select>
                         <input type="submit" name="" value="Edit Entry" />
+
                     </form>
                 </body>
             </html>
