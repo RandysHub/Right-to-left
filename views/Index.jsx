@@ -14,7 +14,8 @@ class Index extends React.Component {
                 <body >
                     <div id='wrapper'>
                         <div id='head'>
-                            <a href="/manga"><h1 >Right to Left</h1></a> <br />
+
+                            <a href="/manga" id='logo' ></a>
                             <input type="text" id='search' />
                             <h2 id='searchLabel'>Search</h2>
                             <div className='buttonsDiv' >
@@ -32,12 +33,19 @@ class Index extends React.Component {
                                     <div class="indexDiv" >
                                         <a href={`/manga/${manga.id}`}><img class="indexImg" src={manga.img} alt="" /></a>
                                         <br />
-                                        <a href={`/manga/${manga.id}`}><h3>{manga.name} Volume 1</h3>
+                                        <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} Volume 1</h3>
                                         </a>
 
-                                        {manga.stock ? <button onClick={subtractStock()}
-                                        >Add to Cart</button> : <h3>OUT OF STOCK</h3>
+                                        {manga.stock ?
+                                            <div>
+                                                <h3>{manga.price}</h3>
+                                                <button id='buy-button' ></button>
+
+                                            </div>
+
+                                            : <h3>OUT OF STOCK</h3>
                                         }
+
                                     </div>
                                 );
                             })}

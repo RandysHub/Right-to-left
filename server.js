@@ -113,6 +113,7 @@ app.get('/manga/:id', (req, res) => {
     });
 });
 
+
 app.delete('/manga/:id', (req, res) => {
     //First arg is ID we want to delet, 2nd arg is callback function
     Manga.findByIdAndRemove(req.params.id, (err, data) => {

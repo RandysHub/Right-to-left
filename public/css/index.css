@@ -1,12 +1,18 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
 }
 
 a {
     text-decoration: none;
-    color: #483a58;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.titles {
+    /* background-image: url(/public/img/logo.png); */
+    color: white;
 }
 
 body {
@@ -41,11 +47,6 @@ body {
 
 
 
-#head {
-    background-color: #4f2d4b;
-    height: 120px;
-    position: sticky;
-}
 
 .indexDiv {
     /* width: 325px;
@@ -57,7 +58,7 @@ body {
     align-items: center;
     align-content: center;
     /* padding-right: 10px; */
-    background-color: #bfbfbf;
+    /* background-color: black; */
 }
 
 .indexButton {
@@ -71,6 +72,25 @@ body {
 .indexImg {
     width: 225px;
     height: 320px;
+
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.6s;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+}
+
+
+/* #indexContainer:hover img {
+    opacity: .3;
+} */
+
+.indexImg:hover {
+    opacity: .3;
+}
+
+.indexImg:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
 }
 
 #search {
@@ -85,7 +105,7 @@ body {
 #searchLabel {
     position: absolute;
     top: 1.8vh;
-    left: 29vw;
+    left: 28vw;
 }
 
 .buttonsDiv {
@@ -93,10 +113,70 @@ body {
     position: absolute;
     top: 9vh;
     left: 22vw;
+    justify-content: space-between;
 }
 
-.genreButtons {
-    width: 10vw;
-    padding: 1px;
-    margin: 5px;
+
+#buy-button {
+    /* position: absolute; */
+    /* left: 40vw;
+    top: 50vh; */
+
+    margin-top: 2vh;
+
+    height: 2vh;
+    width: 2vh;
+
+    background-image: url(../img/cart.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% 40%;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    will-change: box-shadow, transform;
+    /* background: #FCFCFD; */
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    height: 48px;
+    padding: 0 32px;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #36395a;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+
+}
+
+#buy-button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    transform: translateY(-2px);
+}
+
+#buy-button:active {
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+
+#head {
+    background-color: lightgray;
+    height: 120px;
+    position: sticky;
+    /* background-image: url(/public/img/logo.png); */
+}
+
+
+#logo {
+    background-image: url(/img/logo.png);
+    background-size: cover;
+    position: absolute;
+    top: -6.5vh;
+    left: -1vw;
+
+
+    width: 13vw;
+    height: 25vh;
+
+
 }
