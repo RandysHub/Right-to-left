@@ -36,8 +36,9 @@ class Index2 extends React.Component {
 
                                         {manga.stock ?
                                             <div>
-                                                <h3>{manga.price}</h3>
-                                                <button id='buy-button' ></button>
+                                                <h3 id='price'>{manga.price}</h3>
+                                                <a href={`/manga/${manga.id}`}><button id='buy-button' ></button>
+                                                </a>
 
                                             </div>
 

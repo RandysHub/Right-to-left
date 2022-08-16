@@ -25,13 +25,20 @@ class Edit extends React.Component {
                         <div id='forms'>
 
                             <form action={`/manga/${manga.id}?_method=PUT`} method="POST">
-                                Name: <input type="text" name="name" defaultValue={manga.name} placeholder='Name' /><br />
-                                Volume: <input type="text" name="volume" defaultValue={manga.volume} placeholder='volume' /><br />
-                                Image: <input type="text" name="img" defaultValue={manga.img} placeholder='Image URL' /><br />
-                                Stock: <input type="text" name="stock" defaultValue={manga.stock} placeholder='Stock' /><br />
-                                Synopsis: <input style={{ height: '100px', width: '300px' }} type="text" name="synopsis" defaultValue={manga.synopsis} placeholder='Synopsis' /><br />
-                                Price: <input type="text" name="price" defaultValue={manga.price} placeholder='Price' /><br />
+                                Name: <input type="text" name="name" defaultValue={manga.name} placeholder='Name' /><br /><br />
+
+                                Volume: <input type="text" name="volume" defaultValue={manga.volume} placeholder='volume' /><br /><br />
+
+                                Image: <input type="text" name="img" defaultValue={manga.img} placeholder='Image URL' /><br /><br />
+
+                                Stock: <input type="text" name="stock" defaultValue={manga.stock} placeholder='Stock' /><br /><br />
+
+                                <label htmlFor='synopsis'><p>Synopsis:</p></label> <textarea style={{ height: '100px', width: '300px', }} type="text" name="synopsis" defaultValue={manga.synopsis} placeholder='Synopsis' /><br /><br />
+
+                                Price: <input type="text" name="price" defaultValue={manga.price} placeholder='Price' /><br /><br />
+
                                 <label htmlFor="">Genres:</label>
+
                                 <select name="genre" defaultValue={manga.genre} >
                                     <option value="Action">Action</option>
                                     <option value="Slice of Life">Slice of Life</option>

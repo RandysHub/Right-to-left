@@ -7,7 +7,7 @@
 
 a {
     text-decoration: none;
-    color: #111;
+    color: red;
 }
 
 
@@ -21,6 +21,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#price {
+    color: pink;
 }
 
 #wrapper {

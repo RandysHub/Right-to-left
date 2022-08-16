@@ -215,4 +215,6 @@ body {
     height: 40vh;
     top: 15vh;
     left: 40vw;
+    margin: 4px;
+    padding: 9px;
 }

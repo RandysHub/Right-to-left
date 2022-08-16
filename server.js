@@ -116,6 +116,7 @@ app.get('/manga/seed', async (req, res) => {
 });
 
 
+
 app.get('/manga/:id', (req, res) => {
     Manga.findById(req.params.id, (err, foundManga) => {
         res.render("Show", {
