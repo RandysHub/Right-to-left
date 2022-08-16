@@ -1,6 +1,38 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-image: url(../img/berserk.jpg);
+    overflow: hidden;
+}
+
+
+
+#manga-cover {
+    width: 18vw;
+    margin-top: 6vh;
+    margin-left: 4vw;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.6s;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+}
+
+
+/* #indexContainer:hover img {
+    opacity: .3;
+} */
+
+#manga-cover:hover {
+    opacity: .3;
+}
+
+#manga-cover:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
 }
 
 #container {
@@ -8,9 +40,10 @@
     top: 17vh;
     left: 16vw;
     width: 65vw;
-    height: 80vh;
-    background-color: grey;
+    height: 82vh;
+    background-color: #5c4159;
     flex-grow: 1;
+    border: 2px solid black;
 
 }
 
@@ -19,8 +52,52 @@
     align-items: center;
     background-color: ghostwhite;
     height: 4vh;
-    border: 2px solid black;
 }
+
+#bread-crumbs a {
+    color: purple;
+}
+
+.admin-buttons {
+    width: 7vw;
+    height: 4vh;
+    margin-left: 1vw;
+    padding: 0.8em 1.8em;
+    border: 2px solid grey;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: grey;
+}
+
+.admin-buttons::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: grey;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.admin-buttons:hover::before {
+    width: 105%;
+}
+
+.admin-buttons:hover {
+    color: #5c4159;
+}
+
 
 #info-container {
     /* background-color: blue; */
@@ -34,14 +111,20 @@
     justify-items: space-around;
 }
 
-#manga-cover {
-    width: 18vw;
-    margin-top: 6vh;
-    margin-left: 4vw;
+#admin-elements {
+    display: flex;
+
+    /* justify-content: center; */
+
+    position: relative;
+    left: 3vw;
+    top: 13vh;
 }
+
 
 #manga-title {
     /* position: absolute; */
+    color: white;
     width: 20vw;
     left: 40vw;
     top: 11vh;
@@ -52,6 +135,7 @@
 
 #synopsis {
     /* position: absolute; */
+    color: white;
     margin-top: 2vh;
     top: 16vh;
     left: 40vw;
@@ -60,13 +144,21 @@
 
 #price-header {
     /* position: absolute; */
+    color: white;
     margin-top: 2vh;
     top: 27vh;
     left: 40vw;
 }
 
 #price {
-    color: red;
+    color: rgb(196, 63, 63);
+}
+
+#genres {
+
+    /* position: absolute; */
+    top: 32vh;
+    left: 40vw;
 }
 
 #buy-button {
@@ -109,67 +201,4 @@
 #buy-button:active {
     box-shadow: inset 0px 3px 7px #d6d6e7;
     transform: translateY(2px);
-}
-
-
-#genres {
-
-    /* position: absolute; */
-    top: 32vh;
-    left: 40vw;
-}
-
-/* header */
-
-
-
-
-#search {
-    width: 600px;
-    height: 40px;
-
-    position: absolute;
-    top: 1vh;
-    left: 33vw;
-}
-
-#searchLabel {
-    position: absolute;
-    top: 1.8vh;
-    left: 28vw;
-}
-
-.buttonsDiv {
-    display: flex;
-    position: absolute;
-    top: 9vh;
-    left: 22vw;
-}
-
-.genreButtons {
-    width: 10vw;
-    padding: 1px;
-    margin: 5px;
-}
-
-#head {
-    background-color: lightgray;
-    height: 120px;
-    position: sticky;
-    /* background-image: url(/public/img/logo.png); */
-}
-
-
-#logo {
-    background-image: url(/img/logo.png);
-    background-size: cover;
-    position: absolute;
-    top: -6.5vh;
-    left: -1vw;
-
-
-    width: 13vw;
-    height: 25vh;
-
-
 }

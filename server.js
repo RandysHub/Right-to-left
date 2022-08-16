@@ -51,7 +51,7 @@ app.post('/manga', (req, res) => {
 
 app.get('/manga/sports', (req, res) => {
     Manga.find({ genre: 'Sports' }, (error, sportsManga) => {
-        res.render('Index', {
+        res.render('Index2', {
             manga: sportsManga
         })
     })
@@ -59,35 +59,45 @@ app.get('/manga/sports', (req, res) => {
 
 app.get('/manga/action', (req, res) => {
     Manga.find({ genre: 'Action' }, (error, actionManga) => {
-        res.render('Index', {
+        res.render('Index2', {
             manga: actionManga
         })
     })
 })
 
 app.get('/manga/romance', (req, res) => {
-    Manga.find({ genre: 'Romance' }, (error, actionRomance) => {
-        res.render('Index', {
-            manga: actionRomance
+    Manga.find({ genre: 'Romance' }, (error, romanceManga) => {
+        res.render('Index2', {
+            manga: romanceManga
         })
     })
 })
 
 app.get('/manga/sliceoflife', (req, res) => {
-    Manga.find({ genre: 'Slice of Life' }, (error, actionSol) => {
-        res.render('Index', {
-            manga: actionSol
+    Manga.find({ genre: 'Slice of Life' }, (error, solManga) => {
+        res.render('Index2', {
+            manga: solManga
         })
     })
 })
 
 app.get('/manga/comedy', (req, res) => {
-    Manga.find({ genre: 'Comedy' }, (error, actionComedy) => {
-        res.render('Index', {
-            manga: actionComedy
+    Manga.find({ genre: 'Comedy' }, (error, comedyManga) => {
+        res.render('Index2', {
+            manga: comedyManga
         })
     })
 })
+
+app.get('/manga/sale', (req, res) => {
+    Manga.find({ price: '$4.99' }, (error, saleManga) => {
+        res.render('Index2', {
+            manga: saleManga
+        })
+    })
+})
+
+
 
 //new
 app.get('/manga/new', (req, res) => {

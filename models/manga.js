@@ -6,7 +6,8 @@ const mangaSchema = new mongoose.Schema({
     genre: { type: String, required: false },
     synopsis: { type: String, required: false },
     stock: { type: Number, default: 10, required: false },
-    price: { type: String, default: '$9.99', required: true }
+    price: { type: String, default: '$9.99', required: true },
+    volume: { type: String, default: 'Volume One', required: true }
 })
 
 const Manga = mongoose.model('Manga', mangaSchema)

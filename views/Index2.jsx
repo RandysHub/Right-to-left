@@ -1,5 +1,6 @@
+
 const React = require('react');
-class Index extends React.Component {
+class Index2 extends React.Component {
     render() {
         const manga = this.props.manga
         return (
@@ -24,20 +25,14 @@ class Index extends React.Component {
                             </div>
                         </div>
                         <a href='/manga/new'><button class='indexButton' >Add manga entry</button></a>
-                        <div id='promotion-container'>
-                            <a href="/manga/sale"><img id='promotion' src="/img/promotion.png" /></a>
-                        </div>
                         <div id="indexContainer">
                             {manga.map((manga) => {
                                 return (
                                     <div class="indexDiv" >
                                         <a href={`/manga/${manga.id}`}><img class="indexImg" src={manga.img} alt="" /></a>
                                         <br />
-                                        <div id='title-container'>
-
-                                            <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> {manga.volume}</h3></a>
-                                        </div>
-
+                                        <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> Volume 1</h3>
+                                        </a>
 
                                         {manga.stock ?
                                             <div>
@@ -60,4 +55,4 @@ class Index extends React.Component {
     };
 };
 
-module.exports = Index;
+module.exports = Index2;
