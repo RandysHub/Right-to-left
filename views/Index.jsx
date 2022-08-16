@@ -23,7 +23,7 @@ class Index extends React.Component {
                                 <a href="/manga/sports"> <button className='genreButtons'>Sports</button></a>
                             </div>
                         </div>
-                        <a href='/manga/new'><button class='indexButton' >Add manga entry</button></a>
+                        <a href='/manga/new'><button class='genreButtons' id='add-button' >+</button></a>
                         <div id='promotion-container'>
                             <a href="/manga/sale"><img id='promotion' src="/img/promotion.png" /></a>
                         </div>
@@ -35,7 +35,7 @@ class Index extends React.Component {
                                         <br />
                                         <div id='title-container'>
 
-                                            <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> {manga.volume}</h3></a>
+                                            <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> Volume {manga.volume}</h3></a>
                                         </div>
 
 

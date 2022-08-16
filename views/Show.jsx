@@ -22,7 +22,7 @@ class Show extends React.Component {
 
                         <div id='info-container' >
 
-                            <h2 id='manga-title'>{manga.name} <br /> Volume 1</h2>
+                            <h2 id='manga-title'>{manga.name} <br /> Volume {manga.volume}</h2>
                             <h3 id='genres' >Genres: {manga.genre}</h3>
                             <p id='synopsis' >{manga.synopsis}</p>
                             <h3 id='price-header'>Price: <span id='price'>{manga.price}</span> </h3>
@@ -37,7 +37,6 @@ class Show extends React.Component {
                             </form>
                             <a href={`/manga/${manga.id}/edit`}><button type="submit" className='admin-buttons' ><h4>Edit Entry</h4></button></a>
                         </div>
-                        <h3 id='stock'>Stock: {manga.stock}</h3>
                     </div>
                 </body>
             </html >

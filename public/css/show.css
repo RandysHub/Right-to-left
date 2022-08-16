@@ -61,9 +61,10 @@ body {
 .admin-buttons {
     width: 7vw;
     height: 4vh;
+
     margin-left: 1vw;
     padding: 0.8em 1.8em;
-    border: 2px solid grey;
+    border: 2px solid black;
     position: relative;
     overflow: hidden;
     background-color: transparent;
@@ -73,7 +74,7 @@ body {
     transition: .3s;
     z-index: 1;
     font-family: inherit;
-    color: grey;
+    color: black;
 }
 
 .admin-buttons::before {
@@ -84,7 +85,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: grey;
+    background: black;
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -116,10 +117,11 @@ body {
 
     /* justify-content: center; */
 
-    position: relative;
-    left: 3vw;
-    top: 13vh;
+    position: absolute;
+    left: 38vw;
+    top: 77vh;
 }
+
 
 
 #manga-title {
@@ -201,4 +203,16 @@ body {
 #buy-button:active {
     box-shadow: inset 0px 3px 7px #d6d6e7;
     transform: translateY(2px);
+}
+
+
+
+/* edit page */
+#forms {
+    position: absolute;
+
+    width: 20vw;
+    height: 40vh;
+    top: 15vh;
+    left: 40vw;
 }

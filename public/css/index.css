@@ -109,7 +109,7 @@ a {
 #searchLabel {
     position: absolute;
     top: 1.8vh;
-    left: 28vw;
+    left: 28.8vw;
 }
 
 .buttonsDiv {
@@ -161,6 +161,13 @@ a {
 
 .genreButtons:hover {
     color: #111;
+}
+
+#add-button {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    margin: 0%;
 }
 
 #stock {

@@ -31,7 +31,7 @@ class Index2 extends React.Component {
                                     <div class="indexDiv" >
                                         <a href={`/manga/${manga.id}`}><img class="indexImg" src={manga.img} alt="" /></a>
                                         <br />
-                                        <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> Volume 1</h3>
+                                        <a href={`/manga/${manga.id}`}><h3 className='titles'>{manga.name} <br /> Volume {manga.volume}</h3>
                                         </a>
 
                                         {manga.stock ?
