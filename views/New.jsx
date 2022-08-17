@@ -11,7 +11,6 @@ class New extends React.Component {
                 </head>
                 <body >
                     <h3 >Tell me about the Manga</h3>
-                    {/* NOTE: action will be the route, method will be the HTTP verb */}
                     <form action="/manga" method="POST">
                         Name: <input type="text" name="name" placeholder='Name' /><br />
 

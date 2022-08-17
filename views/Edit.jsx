@@ -21,7 +21,6 @@ class Edit extends React.Component {
 
 
                         <img id='manga-cover' src={manga.img} />
-                        {/* NOTE: action will be the route, method will be the HTTP verb */}
                         <div id='forms'>
 
                             <form action={`/manga/${manga.id}?_method=PUT`} method="POST">
