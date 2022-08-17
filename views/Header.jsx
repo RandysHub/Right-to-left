@@ -5,6 +5,7 @@ class Header extends React.Component {
         return (
             <html>
                 <head>
+                    <title>Right 2 Left</title>
                     <link rel="stylesheet" href="/css/index.css" />
                 </head>
 
