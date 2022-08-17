@@ -5,7 +5,8 @@ class Index extends React.Component {
         return (
             <html >
                 <head>
-                    <title>Manga</title>
+                    <title>Right 2 Left</title>
+
                 </head>
                 <link rel="stylesheet" href="/css/index.css" />
                 <body >
