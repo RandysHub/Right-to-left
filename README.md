@@ -1,4 +1,4 @@
-**![Logo](https://i.imgur.com/5LbFg9P.png)
+![Logo](https://i.imgur.com/5LbFg9P.png)
 ## Right 2 Left
 ---
 A manga store made by a manga reader.
