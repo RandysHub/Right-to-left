@@ -2,6 +2,9 @@
 ## Right 2 Left
 ---
 A manga store made by a manga reader.
+## Demonstration
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/ck5ZKPd3Yyg" title="Right 2 Left Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Getting Started
 ---

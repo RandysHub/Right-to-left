@@ -24,7 +24,7 @@ class Index2 extends React.Component {
                                 <a href="/manga/sports"> <button className='genreButtons'>Sports</button></a>
                             </div>
                         </div>
-                        <a href='/manga/new'><button class='indexButton' >Add manga entry</button></a>
+                        <a href='/manga/new'><button class='add-button' >+</button></a>
                         <div id="indexContainer">
                             {manga.map((manga) => {
                                 return (
