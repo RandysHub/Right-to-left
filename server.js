@@ -27,6 +27,10 @@ app.use(methodOverride('_method')) //Sets up methodoverride for use
 //     res.render('Index')
 // })
 
+app.get('/', (req, res) => {
+    res.redirect('/manga')
+})
+
 app.get('/manga/', (req, res) => {
     Manga.find({}, (error, allManga) => {
         res.render('Index', {
