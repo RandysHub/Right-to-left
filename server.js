@@ -108,13 +108,13 @@ app.get('/manga/new', (req, res) => {
 
 
 //seed
-app.get('/manga/seed', async (req, res) => {
-    //Comment below line if you don't want to delete your whole entire collection
-    // Not currently working
-    await Manga.deleteMany({})
-    await Manga.create(mangaData)
-    res.redirect('/manga')
-});
+// app.get('/manga/seed', async (req, res) => {
+//     //Comment below line if you don't want to delete your whole entire collection
+//     // Not currently working
+//     await Manga.deleteMany({})
+//     await Manga.create(mangaData)
+//     res.redirect('/manga')
+// });
 
 
 
