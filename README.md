@@ -29,12 +29,12 @@ All you need to do is click  [here.](https://left-2-right.herokuapp.com/manga)
 GET | /manga/ | Index of manga |
 GET | /manga/:id | Show page for selected manga |
 GET | /manga/new | Page to add manga |
-GET | /manga/sports | Index sorted using genre filter |
-GET | /manga/action | Index sorted using genre filter |
-GET | /manga/romance | Index sorted using genre filter |
-GET | /manga/sliceoflife | Index sorted using genre filter |
-GET | /manga/comedy | Index sorted using genre filter |
-GET | /manga/sale | Index sorted using genre filter |
+GET | /manga/sports | Index sorted using genre a filter |
+GET | /manga/action | Index sorted using genre a filter |
+GET | /manga/romance | Index sorted using genre a filter |
+GET | /manga/sliceoflife | Index sorted using genre a filter |
+GET | /manga/comedy | Index sorted using genre a filter |
+GET | /manga/sale | Index sorted using price a filter |
 GET | /manga/seed | Populates database |
 POST | /manga/ | Add a manga |
 GET | /manga/:id/edit | Page to edit a manga |
